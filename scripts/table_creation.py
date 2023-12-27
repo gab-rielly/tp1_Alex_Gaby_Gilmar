@@ -76,5 +76,4 @@ def create_tables():
         
         if con is not None:
             con.close()
-
-create_tables()
+            
