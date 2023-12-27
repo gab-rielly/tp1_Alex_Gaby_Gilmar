@@ -1,9 +1,9 @@
 import time
-# from create_database import create_db |FAZER ALTERAÇÕES|
-from table_creation import create_tables
+from create_base import create_db
+from create_tables import create_tables
 from config import connect
 
-if _name_ == '_main_':
+if __name__ == '__main__':
 
     start_time = time.time()
     
