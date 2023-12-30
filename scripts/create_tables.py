@@ -45,7 +45,7 @@ def create_tables():
         cria_tabela_categoria_info = sql.SQL("""
         CREATE TABLE IF NOT EXISTS {} (
             id_categoria INT PRIMARY KEY NOT NULL,
-            nome_categoria VARCHAR(36) NOT NULL,
+            nome_categoria VARCHAR(256) NOT NULL,
             FOREIGN KEY(id_categoria) REFERENCES tabela_categoria(categoria_id)
         )
         """).format(sql.Identifier('tabela_categoria_info'))
