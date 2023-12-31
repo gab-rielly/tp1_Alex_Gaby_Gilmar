@@ -3,15 +3,15 @@ from psycopg2 import sql, extensions, errors
 from config import config
 
 def create_tables():
-    # con é responsável por se conectar ao banco de dados PostgreSQL
-    con = None
+    # conn é responsável por se conectar ao banco de dados PostgreSQL
+    conn = None
     try:
         parameters = config()
 
-        con = psycopg2.connect(**parameters)
+        conn = psycopg2.connect(**parameters)
 
         # Criação do cursor
-        cur = con.cursor()
+        cur = conn.cursor()
 
         cria_tabela_produto = sql.SQL("""
         CREATE TABLE IF NOT EXISTS {} (
@@ -71,11 +71,11 @@ def create_tables():
         cur.execute(cria_tabela_categoria_info)
         cur.execute(cria_tabela_review)
 
-        con.commit()
+        conn.commit()
 
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
 
     finally:
-        if con is not None:
-            con.close()
+        if conn is not None:
+            conn.close()

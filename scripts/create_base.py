@@ -5,7 +5,7 @@ def create_db():
     conn = None
     try:
         # connect to the PostgreSQL server without specifying the database name
-        conn = psycopg2.connect(dbname='postgres', user='postgres', password='root', host='localhost')
+        conn = psycopg2.connect(dbname='postgres', user='postgres', password='VIDEOGAME03', host='localhost')
         conn.autocommit = True  
 
         # create a cursor object to execute commands
