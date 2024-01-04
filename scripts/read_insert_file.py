@@ -9,7 +9,7 @@ def inserir_dados_arquivo(arquivo):
         conexao = psycopg2.connect(**parametros)
         cursor = conexao.cursor()
 
-        with open(arquivo, 'r') as file:
+        with open(arquivo, 'r', encoding='utf-8') as file:
             dados = {}
             in_category_section = False
             categories = []
@@ -65,12 +65,11 @@ def inserir_dados_arquivo(arquivo):
                         if in_review_section: # Verifica se há informações de revisão
                             for review in reviews:
                                 data, cliente, avaliacao, votes, util = review
-                                id_review = int(data.replace('-', '')) # Gera um id_review a partir da data
                                 cursor.execute("""
-                                INSERT INTO tabela_review (id_review, id_produto, asin_produto, cliente, data, avaliacao, util)
-                                VALUES (%s, %s, %s, %s, %s, %s, %s)
-                                ON CONFLICT (id_review, id_produto, asin_produto) DO NOTHING
-                                """, (id_review, dados.get('id'), dados.get('asin'), cliente, data, avaliacao, util))    
+                                INSERT INTO tabela_review (id_produto, asin_produto, cliente, data, avaliacao, util)
+                                VALUES (%s, %s, %s, %s, %s, %s)
+                                ON CONFLICT DO NOTHING
+                                """, (dados.get('id'), dados.get('asin'), cliente, data, avaliacao, util))    
 
                             in_review_section = False  # Sai da seção de revisões
                             reviews.clear()  # Limpa a lista de revisões
@@ -121,12 +120,11 @@ def inserir_dados_arquivo(arquivo):
                         review_info = re.match(r'\s*(\d{4}-\d{1,2}-\d{1,2})\s+cutomer:\s+(\w+)\s+rating:\s+(\d+)\s+votes:\s+(\d+)\s+helpful:\s+(\d+)', linha)
                         if review_info:
                             data, cliente, avaliacao, votes, util = review_info.groups()
-                            id_review = int(data.replace('-', '')) # Gera um id_review a partir da data
                             cursor.execute("""
-                            INSERT INTO tabela_review (id_review, id_produto, asin_produto, cliente, data, avaliacao, util)
-                            VALUES (%s, %s, %s, %s, %s, %s, %s)
-                            ON CONFLICT (id_review, id_produto, asin_produto) DO NOTHING
-                            """, (id_review, dados.get('id'), dados.get('asin'), cliente, data, avaliacao, util))
+                            INSERT INTO tabela_review (id_produto, asin_produto, cliente, data, avaliacao, util)
+                            VALUES (%s, %s, %s, %s, %s, %s)
+                            ON CONFLICT DO NOTHING
+                            """, (dados.get('id'), dados.get('asin'), cliente, data, avaliacao, util))
 
 
             # Commit das alterações
