@@ -366,3 +366,310 @@ ASIN: 3895780812
    |Books[283155]|Subjects[1000]|Computers & Internet[5]|General[657762]
   reviews: total: 1  downloaded: 1  avg rating: 5
     2001-2-8  cutomer:  AWHGCJOOZBTB5  rating: 5  votes:  10  helpful:  10
+
+Id:   21
+ASIN: 0790747324
+  title: The Time Machine
+  group: DVD
+  salesrank: 795
+  similar: 5  B00007JMD8  6305350221  B00004RF9B  B00005JKFR  B00005NG6A
+  categories: 26
+   |[139452]|DVD[130]|Genres[404276]|Drama[163379]|General[163390]
+   |[139452]|DVD[130]|Genres[404276]|Science Fiction & Fantasy[163431]|Fantasy[163440]
+   |[139452]|DVD[130]|Genres[404276]|Science Fiction & Fantasy[163431]|General[163442]
+   |[139452]|DVD[130]|Genres[404276]|Science Fiction & Fantasy[163431]|Classic Sci-Fi[292650]
+   |[139452]|DVD[130]|Genres[404276]|Science Fiction & Fantasy[163431]|Monsters & Mutants[292662]
+   |[139452]|DVD[130]|Genres[404276]|Science Fiction & Fantasy[163431]|By Theme[292669]|Time Travel[292667]
+   |[139452]|DVD[130]|Actors & Actresses[404278]|( B )[411316]|Bissell, Whit[413160]
+   |[139452]|DVD[130]|Actors & Actresses[404278]|( C )[416120]|Cabot, Sebastian[416132]
+   |[139452]|DVD[130]|Actors & Actresses[404278]|( F )[422476]|Frees, Paul[423942]
+   |[139452]|DVD[130]|Actors & Actresses[404278]|( H )[426368]|Helmore, Tom[427584]
+   |[139452]|DVD[130]|Actors & Actresses[404278]|( L )[432148]|Lloyd, Doris[433832]
+   |[139452]|DVD[130]|Actors & Actresses[404278]|( M )[434574]|Mimieux, Yvette[437458]
+   |[139452]|DVD[130]|Actors & Actresses[404278]|( T )[448792]|Taylor, Rod[449112]
+   |[139452]|DVD[130]|Actors & Actresses[404278]|( Y )[453438]|Young, Alan[453620]
+   |[139452]|DVD[130]|Directors[403502]|( P )[460606]|Pal, George[460622]
+   |[139452]|DVD[130]|Genres[404276]|Art House & International[163313]|By Theme[502916]|Costume Adventures[502980]
+   |[139452]|DVD[130]|Genres[404276]|Drama[163379]|Classics[524228]
+   |[139452]|DVD[130]|Special Features[408328]|Today's Deals in DVD[409298]|Deals Under $15[565160]
+   |[139452]|DVD[130]|Special Features[408328]|Titles[579510]|( T )[579550]
+   |[139452]|DVD[130]|Genres[404276]|Art House & International[163313]|By Country[284926]|United Kingdom[579580]|General[579588]
+   |[139452]|DVD[130]|Specialty Stores[498862]|Studio Specials[468374]|Warner Home Video[515794]|Drama[600318]
+   |[139452]|DVD[130]|Specialty Stores[498862]|Studio Specials[468374]|Warner Home Video[515794]|All Titles[600330]
+   |[139452]|DVD[130]|Specialty Stores[498862]|Studio Specials[468374]|Warner Home Video[515794]|Classics[600334]
+   |[265523]|Amazon.com Stores[285080]|Amazon.com Outlet[517808]|Categories[526028]|DVD Outlet[734006]|Deals Under $15[734042]
+   |[139452]|DVD[130]|Genres[404276]|Science Fiction & Fantasy[163431]|Futuristic[735728]
+   |[139452]|DVD[130]|Specialty Stores[498862]|Studio Specials[468374]|Warner Home Video[515794]|DVDs Under $15[1038542]
+  reviews: total: 140  downloaded: 140  avg rating: 4.5
+    1998-12-27  cutomer: A3D0FUIHSMCHXG  rating: 5  votes:   1  helpful:   1
+    1998-12-28  cutomer: A106FE8HPE6LK6  rating: 4  votes:   9  helpful:   9
+    1999-4-19  cutomer: A1Y6LC4JFBCGZN  rating: 4  votes:   6  helpful:   6
+    1999-5-11  cutomer: A2A1EHOGR8MW0I  rating: 5  votes:   1  helpful:   1
+    1999-6-9  cutomer: A3I7CRNHGZVWXP  rating: 5  votes:   2  helpful:   2
+    1999-6-10  cutomer: A2GEKIVHR1VSHQ  rating: 4  votes:   0  helpful:   0
+    1999-6-10  cutomer:  AKQV65L3TAIW8  rating: 5  votes:   1  helpful:   1
+    1999-6-12  cutomer:  ATVPDKIKX0DER  rating: 5  votes:  20  helpful:  19
+    1999-6-12  cutomer:  ATVPDKIKX0DER  rating: 5  votes:   1  helpful:   1
+    1999-6-20  cutomer: A2MOT9BXC3C6H2  rating: 5  votes:   0  helpful:   0
+    1999-7-2  cutomer: A2003P5YJPPC6P  rating: 5  votes:   2  helpful:   2
+    1999-7-26  cutomer:  AWQXPWBP93Z4K  rating: 5  votes:   2  helpful:   2
+    1999-9-4  cutomer: A11XDEU9VOOWYN  rating: 5  votes:   4  helpful:   2
+    1999-9-4  cutomer: A3J953WDIBQX63  rating: 5  votes:   2  helpful:   2
+    1999-10-28  cutomer: A13JXEPCPXNUCI  rating: 5  votes:  27  helpful:  26
+    1999-10-28  cutomer: A1928PHI4RBCQ9  rating: 5  votes:   5  helpful:   4
+    1999-12-5  cutomer:  AFZLD0HDJVJUJ  rating: 4  votes:   1  helpful:   1
+    1999-12-30  cutomer:  AQXLBK2CDW2DP  rating: 1  votes:  41  helpful:   1
+    2000-2-1  cutomer: A1H2SCAYWQLMC0  rating: 5  votes:   5  helpful:   3
+    2000-3-14  cutomer:  A1RPTVW5VEOSI  rating: 4  votes:   1  helpful:   0
+    2000-4-2  cutomer:  AIMBOX2T0HV1H  rating: 4  votes:   7  helpful:   5
+    2000-5-25  cutomer: A1J3HK3IPLHOJ3  rating: 5  votes:   2  helpful:   2
+    2000-5-29  cutomer:  ATVPDKIKX0DER  rating: 5  votes:   1  helpful:   1
+    2000-6-20  cutomer: A3NGH3DOKQFCWD  rating: 4  votes:   0  helpful:   0
+    2000-6-25  cutomer: A3LFRQVRXBTNCG  rating: 5  votes:   3  helpful:   2
+    2000-6-28  cutomer: A31HYO7EOTZG1Y  rating: 5  votes:   0  helpful:   0
+    2000-6-28  cutomer:  A8473S963WDUZ  rating: 5  votes:   0  helpful:   0
+    2000-6-30  cutomer: A1L7G9JSLCY384  rating: 5  votes:   1  helpful:   1
+    2000-7-2  cutomer:  AXY18W5QMN7UV  rating: 5  votes:   2  helpful:   2
+    2000-8-7  cutomer: A2X666IM8DP7PH  rating: 5  votes:   1  helpful:   0
+    2000-9-8  cutomer:  A96DHMTN072M1  rating: 5  votes:   1  helpful:   1
+    2000-9-16  cutomer:  AH64IJELQ4PJN  rating: 5  votes:  23  helpful:  22
+    2000-9-20  cutomer: A39ABH4E0APOG3  rating: 5  votes:  13  helpful:  13
+    2000-9-23  cutomer: A2X44DD1TN0P13  rating: 4  votes:   0  helpful:   0
+    2000-10-2  cutomer: A2AML5BI49ST3F  rating: 5  votes:   6  helpful:   5
+    2000-10-2  cutomer:  AES0JMK0KYYHI  rating: 5  votes:  12  helpful:  10
+    2000-10-3  cutomer: A16VWWB8G00EPV  rating: 4  votes:   6  helpful:   5
+    2000-10-8  cutomer: A1BWHXTFOVF9CY  rating: 5  votes:  33  helpful:  32
+    2000-10-10  cutomer: A1UVMG7COVPLC6  rating: 5  votes:   3  helpful:   3
+    2000-10-18  cutomer: A2RFZ21T1WOLID  rating: 2  votes:   4  helpful:   2
+    2000-10-19  cutomer: A2KFUFXQ1YTWNT  rating: 5  votes:   7  helpful:   6
+    2000-11-1  cutomer: A14QW3EMN8PBZV  rating: 5  votes:   1  helpful:   1
+    2000-11-1  cutomer: A14QW3EMN8PBZV  rating: 5  votes:   8  helpful:   7
+    2000-11-25  cutomer: A20EEWWSFMZ1PN  rating: 5  votes:   2  helpful:   2
+    2000-12-26  cutomer: A22IK3I6U76GX0  rating: 5  votes:   4  helpful:   3
+    2001-1-7  cutomer:  AU8552YCOO5QX  rating: 2  votes:   4  helpful:   0
+    2001-1-15  cutomer:  AA5ELPH4F7AIP  rating: 1  votes:  21  helpful:   3
+    2001-4-18  cutomer: A324LH8S4C8U4W  rating: 5  votes:   1  helpful:   1
+    2001-5-12  cutomer: A2D9IEFJGB483Q  rating: 5  votes:   3  helpful:   3
+    2001-6-8  cutomer:  AEXTGSES7BVSV  rating: 5  votes:   1  helpful:   1
+    2001-6-11  cutomer: A1RT82AIQFRRQS  rating: 5  votes:   1  helpful:   1
+    2001-6-16  cutomer:  ARFBRSE35ZJ6A  rating: 4  votes:   3  helpful:   3
+    2001-6-25  cutomer: A2ZYH9XRO507OB  rating: 5  votes:   1  helpful:   1
+    2001-7-3  cutomer: A3HPOCPJJQNMWN  rating: 5  votes:   3  helpful:   2
+    2001-7-7  cutomer: A3LFZOAGD8JTE9  rating: 5  votes:   3  helpful:   0
+    2001-8-3  cutomer: A20IOTRKF4YRM7  rating: 5  votes:   0  helpful:   0
+    2001-8-19  cutomer: A1BRXLFWILNICE  rating: 5  votes:  10  helpful:  10
+    2001-9-17  cutomer: A3VXU7BEE97UUG  rating: 1  votes:   7  helpful:   0
+    2001-9-29  cutomer: A2B8DJ0CKN9FAO  rating: 5  votes:   3  helpful:   2
+    2001-10-8  cutomer:  AGOG7P9R8NZ7T  rating: 5  votes:   3  helpful:   1
+    2002-2-6  cutomer: A3ICHEO78NFE4Y  rating: 5  votes:   1  helpful:   1
+    2002-2-9  cutomer: A2D75DJ707PFI9  rating: 5  votes:   4  helpful:   3
+    2002-2-24  cutomer:  A92LD431P843F  rating: 5  votes:   8  helpful:   7
+    2002-3-7  cutomer: A2YD21XOPJ966C  rating: 5  votes:   7  helpful:   5
+    2002-3-12  cutomer: A1HY9XRPW8N2HN  rating: 4  votes:   3  helpful:   2
+    2002-3-13  cutomer: A1J2931UBBJPXM  rating: 4  votes:   3  helpful:   3
+    2002-3-15  cutomer: A13PCJSIRWAKHE  rating: 5  votes:   3  helpful:   2
+    2002-3-16  cutomer: A2WZ1B92F81LJJ  rating: 4  votes:   2  helpful:   2
+    2002-3-31  cutomer: A3UF0YWSR4I2HL  rating: 5  votes:   4  helpful:   2
+    2002-4-2  cutomer: A25JH6CO4DVINS  rating: 4  votes:   6  helpful:   4
+    2002-4-5  cutomer: A106FE8HPE6LK6  rating: 4  votes:   4  helpful:   3
+    2002-4-17  cutomer: A1T0Z4J5PPLTC7  rating: 4  votes:  11  helpful:   8
+    2002-4-28  cutomer: A24FSR37TN4MSF  rating: 5  votes:   5  helpful:   3
+    2002-5-9  cutomer: A3NOIRVMZQEBQ9  rating: 1  votes:  19  helpful:   2
+    2002-5-25  cutomer: A1APMHP8DPIS3G  rating: 5  votes:   3  helpful:   1
+    2002-5-28  cutomer: A3RRBPUGD7UOSP  rating: 5  votes:   3  helpful:   0
+    2002-6-3  cutomer: A1GGHFJL5TSU5J  rating: 5  votes:   3  helpful:   1
+    2002-6-27  cutomer: A2CXT3A901DGMP  rating: 4  votes:   2  helpful:   1
+    2002-7-1  cutomer: A2W00XKTTF1G0Z  rating: 5  votes:  12  helpful:  10
+    2002-7-19  cutomer: A31RM5QU797HPJ  rating: 4  votes:   5  helpful:   1
+    2002-8-2  cutomer: A2IMHV5ZARXIDR  rating: 5  votes:   4  helpful:   3
+    2002-8-3  cutomer: A3P121GNV5QYIN  rating: 5  votes:   2  helpful:   1
+    2002-8-5  cutomer: A3P121GNV5QYIN  rating: 5  votes:   4  helpful:   4
+    2002-8-10  cutomer: A3O2RCKAMSE9X7  rating: 5  votes:   5  helpful:   4
+    2002-8-21  cutomer: A13JQOKQVCMN9U  rating: 5  votes:   4  helpful:   2
+    2002-8-31  cutomer: A27QZDO1FRRFCV  rating: 4  votes:   5  helpful:   1
+    2002-9-16  cutomer: A3439X75UP0Q3G  rating: 4  votes:   2  helpful:   1
+    2002-9-24  cutomer: A1I7GHG2XNYO3J  rating: 5  votes:   2  helpful:   1
+    2002-9-30  cutomer: A3D550GH0U6T5C  rating: 5  votes:   2  helpful:   2
+    2002-10-2  cutomer: A2RD0B8LLOSMCQ  rating: 3  votes:   6  helpful:   4
+    2002-10-19  cutomer: A2SGR7LE899LGG  rating: 5  votes:   2  helpful:   1
+    2002-10-21  cutomer:  AYPCUQS6ARWFH  rating: 4  votes:   7  helpful:   7
+    2002-11-27  cutomer: A2XLGLF0V4O7JD  rating: 5  votes:   1  helpful:   1
+    2002-12-14  cutomer: A2KVUYPLEW4LXT  rating: 5  votes:   5  helpful:   5
+    2002-12-23  cutomer:  AJYGQV81FSFE2  rating: 4  votes:   2  helpful:   2
+    2003-1-12  cutomer: A1SWK29E1MZHI6  rating: 5  votes:   1  helpful:   1
+    2003-2-1  cutomer: A2NJO6YE954DBH  rating: 4  votes:   8  helpful:   6
+    2003-2-14  cutomer: A2AOZQ3WTNVVOK  rating: 5  votes:   7  helpful:   7
+    2003-2-26  cutomer: A3CS4JXY9KJ5G5  rating: 5  votes:   4  helpful:   4
+    2003-3-13  cutomer: A3DSU63A9Z43KN  rating: 5  votes:   2  helpful:   2
+    2003-4-14  cutomer: A10DB0H2NZF11E  rating: 5  votes:   2  helpful:   1
+    2003-4-26  cutomer:   AAYW1H4SMNOI  rating: 5  votes:   6  helpful:   5
+    2003-5-7  cutomer:  A1J83NE4U6IL7  rating: 5  votes:  10  helpful:   0
+    2003-5-18  cutomer:  AW1GHENIL5V5G  rating: 5  votes:   0  helpful:   0
+    2003-5-27  cutomer: A2SGR7LE899LGG  rating: 5  votes:   0  helpful:   0
+    2003-6-8  cutomer: A1HVZ0569ZHZW9  rating: 5  votes:   1  helpful:   0
+    2003-7-6  cutomer: A2Q13PHEXGR48Q  rating: 4  votes:   1  helpful:   1
+    2003-7-13  cutomer: A3N9CZ1RK4OTYE  rating: 4  votes:   0  helpful:   0
+    2003-7-22  cutomer: A2QA095LQPDBJD  rating: 4  votes:   3  helpful:   1
+    2003-7-25  cutomer:  ALWB64XOXNMDP  rating: 5  votes:   2  helpful:   1
+    2003-8-22  cutomer:  A9UU8OR0TBMHE  rating: 5  votes:   3  helpful:   2
+    2003-10-15  cutomer:  A8PZDIAF0NTIS  rating: 5  votes:   1  helpful:   1
+    2003-10-30  cutomer: A2OVUDBRWGX0LL  rating: 4  votes:   9  helpful:   7
+    2003-11-7  cutomer: A2ZSC81MXLBELX  rating: 5  votes:  24  helpful:  24
+    2004-1-29  cutomer: A2CKARIIFUAOP0  rating: 5  votes:   2  helpful:   1
+    2004-2-14  cutomer: A3UO0OJYKEL0QN  rating: 3  votes:   4  helpful:   1
+    2004-2-27  cutomer: A3ASR7JA7MPKW4  rating: 5  votes:   3  helpful:   3
+    2004-3-29  cutomer: A13PAFCVMB1DV8  rating: 3  votes:   7  helpful:   2
+    2004-4-8  cutomer: A3W18T2ITHXW5O  rating: 2  votes:   7  helpful:   1
+    2004-4-22  cutomer: A1BVV2K1BKGPD5  rating: 5  votes:   3  helpful:   2
+    2004-5-15  cutomer: A3LZGLA88K0LA0  rating: 5  votes:   1  helpful:   1
+    2004-5-20  cutomer:  A2RRCZLVCA7A7  rating: 4  votes:   2  helpful:   2
+    2004-5-24  cutomer: A17U4YXN5G7UAP  rating: 4  votes:   0  helpful:   0
+    2004-7-2  cutomer: A3160YSU1KRL8E  rating: 5  votes:   1  helpful:   1
+    2004-7-5  cutomer:  AIOXMENE1HBR7  rating: 5  votes:   3  helpful:   3
+    2004-7-17  cutomer: A3FITKYQQYGRXG  rating: 5  votes:   5  helpful:   4
+    2004-8-15  cutomer:  AAECAHBNP1VD2  rating: 4  votes:   8  helpful:   7
+    2004-10-13  cutomer: A2JV8PH4NGQPJ6  rating: 5  votes:  28  helpful:  25
+    2004-12-3  cutomer: A1P1T0PFD4F0VS  rating: 5  votes:   1  helpful:   1
+    2004-12-13  cutomer: A1JY13815273PS  rating: 5  votes:   5  helpful:   4
+    2005-2-9  cutomer: A3BSL4PQKPH3SQ  rating: 5  votes:   3  helpful:   2
+    2005-2-16  cutomer: A3JPPR6JT75N0E  rating: 5  votes:   3  helpful:   2
+    2005-3-10  cutomer: A2K3U6DVQQRES3  rating: 5  votes:   4  helpful:   3
+    2005-4-3  cutomer: A286G67EK7Q1WD  rating: 5  votes:   1  helpful:   1
+    2005-4-9  cutomer: A26TSW6AI59ZCV  rating: 5  votes:   2  helpful:   2
+    2005-4-9  cutomer: A26TSW6AI59ZCV  rating: 5  votes:   2  helpful:   2
+    2005-5-2  cutomer: A1Y87E22UVYCE6  rating: 5  votes:   4  helpful:   3
+    2005-5-12  cutomer: A25ZVI6RH1KA5L  rating: 5  votes:   7  helpful:   6
+    2005-6-16  cutomer: A30TK6U7DNS82R  rating: 5  votes:   0  helpful:   0
+    2005-6-17  cutomer: A3ADUOVTY3TIRU  rating: 5  votes:   2  helpful:   2
+
+Id:   22
+ASIN: B00005NTSV
+  title: Come What May
+  group: Music
+  salesrank: 83369
+  similar: 5  B00000JCDS  B000004CSZ  B00016XN6Q  B00005LLY3  B00023B1UI
+  categories: 5
+   |Music[5174]|Styles[301668]|Jazz[34]|General[63926]
+   |Music[5174]|Styles[301668]|Jazz[34]|Vocal Jazz[598170]|Vocal Jazz General[63934]
+   |Music[5174]|Styles[301668]|Broadway & Vocalists[265640]|Traditional Vocal Pop[513060]
+   |Music[5174]|Specialty Stores[468040]|Indie Music[266023]|Jazz[171246]|General[520200]
+   |Music[5174]|Specialty Stores[468040]|Indie Music[266023]|Jazz[171246]|Vocal Jazz[520230]
+  reviews: total: 4  downloaded: 4  avg rating: 4.5
+    2001-10-13  cutomer:  AAM7TSZHVVCAL  rating: 4  votes:   7  helpful:   6
+    2002-1-30  cutomer: A33Z7JTV7SSW9Y  rating: 3  votes:   3  helpful:   1
+    2002-3-10  cutomer: A1LVL0G0QNPAGI  rating: 5  votes:   6  helpful:   6
+    2002-4-16  cutomer:  A17T39AXANC7S  rating: 5  votes:   9  helpful:   8
+
+Id:   23
+ASIN: 0393049388
+  title: Strange Fire: A Novel
+  group: Book
+  salesrank: 1277867
+  similar: 0
+  categories: 3
+   |Books[283155]|Subjects[1000]|Literature & Fiction[17]|General[10125]|Contemporary[10129]
+   |Books[283155]|Subjects[1000]|Mystery & Thrillers[18]|Mystery[10457]|General[10466]
+   |Books[283155]|Subjects[1000]|Mystery & Thrillers[18]|General[605116]
+  reviews: total: 3  downloaded: 3  avg rating: 3
+    2001-6-14  cutomer:  AA90ANPKJB452  rating: 4  votes:   4  helpful:   1
+    2001-8-20  cutomer: A382XQ7SYXEW1Q  rating: 2  votes:   2  helpful:   2
+    2002-8-5  cutomer: A12MOYPCEJUGW6  rating: 3  votes:   0  helpful:   0
+
+Id:   24
+ASIN: 0553525476
+  title: The Casebook of Sherlock Holmes, Volume 2 (Casebook of Sherlock Holmes)
+  group: Book
+  salesrank: 1545277
+  similar: 0
+  categories: 9
+   |Books[283155]|Formats[504358]|Books on Tape[44]|Mystery & Thrillers[2303]|Mystery[2304]
+   |Books[283155]|Formats[504358]|Books on Tape[44]|Radio Shows[2312]
+   |Books[283155]|Subjects[1000]|Entertainment[86]|Radio[4564]|General Broadcasting[4566]
+   |Books[283155]|Subjects[1000]|Mystery & Thrillers[18]|Mystery[10457]|British Detectives[10461]
+   |Books[283155]|Subjects[1000]|Mystery & Thrillers[18]|Mystery[10457]|Sherlock Holmes[10477]
+   |Books[283155]|Subjects[1000]|Mystery & Thrillers[18]|Authors, A-Z[69300]|( D )[69304]|Doyle, Arthur Conan[69407]|General[284551]
+   |Books[283155]|Formats[504358]|Books on Tape[44]|Authors, A-Z[287120]|( D )[287124]|Doyle, Arthur Conan[287265]
+   |Books[283155]|Formats[504358]|Books on Tape[44]|Mystery & Thrillers[2303]|Authors, A-Z[585596]|( D )[585604]|Doyle, Sir Arthur Conan[585790]
+   |Books[283155]|Formats[504358]|Books on Tape[44]|General[658010]
+  reviews: total: 2  downloaded: 2  avg rating: 4.5
+    1998-7-7  cutomer:  ATVPDKIKX0DER  rating: 4  votes:   5  helpful:   5
+    2001-5-4  cutomer: A1VFKMHY42W2O3  rating: 5  votes:   0  helpful:   0
+
+Id:   25
+ASIN: 0939165252
+  title: Jailed for Freedom: American Women Win the Vote
+  group: Book
+  salesrank: 326756
+  similar: 5  059500055X  B00026L9CU  0471426121  0791453200  0674106539
+  categories: 2
+   |Books[283155]|Subjects[1000]|Nonfiction[53]|Government[10753]|Elections[10763]
+   |Books[283155]|Subjects[1000]|Nonfiction[53]|Women's Studies[11325]|History[11336]
+  reviews: total: 2  downloaded: 2  avg rating: 3.5
+    2001-2-14  cutomer: A3293YQUH9SFNJ  rating: 4  votes:   9  helpful:   4
+    2003-9-25  cutomer: A2G358G53L7W5E  rating: 3  votes:   9  helpful:   3
+
+Id:   26
+ASIN: 1590930509
+  title: Chicken Little
+  group: Book
+  salesrank: 242571
+  similar: 5  0439078172  0899192254  0688070450  0899193498  1577683684
+  categories: 3
+   |Books[283155]|Subjects[1000]|Children's Books[4]|Literature[2966]|Fairy Tales, Folk Tales & Myths[2977]|Stories[3002]
+   |Books[283155]|Subjects[1000]|Children's Books[4]|Ages 4-8[2785]|Picture Books[170061]
+   |Books[283155]|Subjects[1000]|Children's Books[4]|Ages 4-8[2785]|General[170062]
+  reviews: total: 1  downloaded: 1  avg rating: 4
+    2002-4-28  cutomer: A1SMZFT2R1QBRW  rating: 4  votes:   7  helpful:   4
+
+Id:   27
+ASIN: 0231096704
+  title: The Columbia Anthology of Gay Literature
+  group: Book
+  salesrank: 1119683
+  similar: 5  0385492286  0300080883  0140172483  0375707409  0520078748
+  categories: 3
+   |Books[283155]|Subjects[1000]|Literature & Fiction[17]|General[10125]|Classics[10127]
+   |Books[283155]|Subjects[1000]|Gay & Lesbian[301889]|Nonfiction[10703]|General[10716]
+   |Books[283155]|Subjects[1000]|Nonfiction[53]|Social Sciences[11232]|Special Groups[11298]|Lesbian Studies[11308]
+  reviews: total: 2  downloaded: 2  avg rating: 3
+    2000-4-25  cutomer: A1J0UKHJCBDLBE  rating: 4  votes:   2  helpful:   2
+    2004-3-2  cutomer: A3EFCK0HZQPNQI  rating: 2  votes:   1  helpful:   0
+
+Id:   28
+ASIN: 1893732290
+  title: God Knows Marriage Isn't Always Easy: 12 Ways to Add Zest (God Knows)
+  group: Book
+  salesrank: 745886
+  similar: 3  189373238X  1893732398  0609805797
+  categories: 2
+   |Books[283155]|Subjects[1000]|Religion & Spirituality[22]|Christianity[12290]|Christian Living[12333]|Faith[12339]
+   |Books[283155]|Subjects[1000]|Religion & Spirituality[22]|Christianity[12290]|Christian Living[12333]|Relationships[69720]|Marriage[69722]
+  reviews: total: 0  downloaded: 0  avg rating: 0
+
+Id:   29
+ASIN: 0781718791
+  title: Advanced Pediatric Clinical Assessment: Skills and Procedures
+  group: Book
+  salesrank: 677416
+  similar: 5  0071360387  0323016774  0781735114  0721601855  0721680178
+  categories: 5
+   |Books[283155]|Subjects[1000]|Medicine[13996]|Nursing[14191]|Assessment & Diagnosis[14195]
+   |Books[283155]|Subjects[1000]|Medicine[13996]|Nursing[14191]|Pediatric & Neonatal[14231]
+   |Books[283155]|Subjects[1000]|Medicine[13996]|Specialties[225827]|Pediatrics[14389]|General[14392]
+   |Books[283155]|Subjects[1000]|Professional & Technical[173507]|Medical[173514]|Nursing[227640]|Assessment & Diagnosis[227643]
+   |Books[283155]|Subjects[1000]|Professional & Technical[173507]|Medical[173514]|Nursing[227640]|Pediatrics[227660]
+  reviews: total: 0  downloaded: 0  avg rating: 0
+
+Id:   30
+ASIN: 0471150274
+  title: Solving Statics Problems with MathCAD
+  group: Book
+  salesrank: 227883
+  similar: 5  0471203092  013061081X  0130081779  1852331666  0070121893
+  categories: 4
+   |Books[283155]|Subjects[1000]|Engineering[13643]|Mechanical[13778]|General[13788]
+   |Books[283155]|Subjects[1000]|Engineering[13643]|Aerospace[226498]|Advanced Mechanics[226500]
+   |Books[283155]|Subjects[1000]|Engineering[13643]|Civil[13663]|Mechanics[226524]
+   |Books[283155]|Specialty Stores[504360]|jp-unknown1[1061348]
+  reviews: total: 0  downloaded: 0  avg rating: 0
+  
