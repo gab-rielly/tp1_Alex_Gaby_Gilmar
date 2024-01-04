@@ -9,7 +9,7 @@ class BancoDeDados:
     def conectar(self):
         try:
             # Conectar ao servidor PostgreSQL sem especificar o nome do banco de dados
-            self.conn = psycopg2.connect(dbname='postgres', user='postgres', password='VIDEOGAME03', host='localhost')
+            self.conn = psycopg2.connect(dbname='postgres', user='postgres', password='ab0802', host='localhost')
             self.conn.autocommit = True
         except (Exception, psycopg2.DatabaseError) as erro:
             print(erro)

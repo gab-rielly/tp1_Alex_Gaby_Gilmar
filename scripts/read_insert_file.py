@@ -13,6 +13,8 @@ def inserir_dados_arquivo(arquivo):
             dados = {}
             in_category_section = False
             categories = []
+            in_review_section = False
+            reviews = []
 
             for linha in file:
                 linha = linha.strip()
@@ -24,6 +26,9 @@ def inserir_dados_arquivo(arquivo):
                     if chave.lower() == 'categories':
                         in_category_section = True
                         categories.clear()  # Limpa a lista de categorias
+                    elif chave.lower() == 'reviews':
+                        in_review_section = True
+                        reviews.clear()
 
                 elif linha == '':
                     # Inserção de dados na tabela produto
@@ -56,12 +61,32 @@ def inserir_dados_arquivo(arquivo):
                             in_category_section = False  # Sai da seção de categorias
                             categories.clear()  # Limpa a lista de categorias
 
+                    # Inserção de dados na tabela review
+                        if in_review_section: # Verifica se há informações de revisão
+                            for review in reviews:
+                                data, cliente, avaliacao, votes, util = review
+                                id_review = int(data.replace('-', '')) # Gera um id_review a partir da data
+                                cursor.execute("""
+                                INSERT INTO tabela_review (id_review, id_produto, asin_produto, cliente, data, avaliacao, util)
+                                VALUES (%s, %s, %s, %s, %s, %s, %s)
+                                ON CONFLICT (id_review, id_produto, asin_produto) DO NOTHING
+                                """, (id_review, dados.get('id'), dados.get('asin'), cliente, data, avaliacao, util))    
+
+                            in_review_section = False  # Sai da seção de revisões
+                            reviews.clear()  # Limpa a lista de revisões
+
                     dados = {}  # Limpa o dicionário de dados para o próximo produto
+
 
                 elif in_category_section:
                     result = re.findall(r"\|(.*?)\[(\d+)\]", linha)
                     if result:
                         categories.extend(result)
+                if in_review_section:
+                    review_info = re.match(r'\s*(\d{4}-\d{1,2}-\d{1,2})\s+cutomer:\s+(\w+)\s+rating:\s+(\d+)\s+\s+votes:\s+(\d+)\s+helpful:\s+(\d+)', linha)
+                    if review_info:
+                        reviews.append(review_info.groups()) # Adiciona a revisão à lista de revisões               
+
 
             # Se o dicionário ainda tiver dados após o término do loop, insira o último produto
             if dados:
@@ -92,6 +117,17 @@ def inserir_dados_arquivo(arquivo):
 
                         in_category_section = False  # Sai da seção de categorias
                         categories.clear()  # Limpa a lista de categorias
+                    if in_review_section:
+                        review_info = re.match(r'\s*(\d{4}-\d{1,2}-\d{1,2})\s+cutomer:\s+(\w+)\s+rating:\s+(\d+)\s+votes:\s+(\d+)\s+helpful:\s+(\d+)', linha)
+                        if review_info:
+                            data, cliente, avaliacao, votes, util = review_info.groups()
+                            id_review = int(data.replace('-', '')) # Gera um id_review a partir da data
+                            cursor.execute("""
+                            INSERT INTO tabela_review (id_review, id_produto, asin_produto, cliente, data, avaliacao, util)
+                            VALUES (%s, %s, %s, %s, %s, %s, %s)
+                            ON CONFLICT (id_review, id_produto, asin_produto) DO NOTHING
+                            """, (id_review, dados.get('id'), dados.get('asin'), cliente, data, avaliacao, util))
+
 
             # Commit das alterações
             conexao.commit()
