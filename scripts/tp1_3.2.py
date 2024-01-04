@@ -2,7 +2,7 @@ import sys
 import time
 from config import conectar
 from banco_de_dados import *
-#from insert_data import insert_data
+from read_insert_file import inserir_dados_arquivo
 
 if __name__ == '__main__':
     start_time = time.time()
@@ -15,7 +15,7 @@ if __name__ == '__main__':
         banco.criar_tabelas()
 
     if "--insert" in sys.argv:
-        #insert_data()
+        inserir_dados_arquivo('amazon-meta.txt')
         pass
 
     if "--drop" in sys.argv:
@@ -27,4 +27,4 @@ if __name__ == '__main__':
     minutes = int(total_time // 60)
     seconds = int(total_time % 60)
 
-    print(f"All operations completed successfully in {minutes} minutes and {seconds} seconds.")
+    print(f"Operações finalizadas em {minutes} minutos e {seconds} segundos.")

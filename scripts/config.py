@@ -1,52 +1,37 @@
-
 import psycopg2
 from configparser import ConfigParser
 
 def config(filename='bd.ini', section='postgresql'):
-    # create a parser
+    
     parser = ConfigParser()
-    # read config file
+    # le a config de um arq
     parser.read(filename)
-
-    # get section, default to postgresql
     db = {}
     if parser.has_section(section):
         params = parser.items(section)
         for param in params:
             db[param[0]] = param[1]
     else:
-        raise Exception('Section {0} not found in the {1} file'.format(section, filename))
+        raise Exception('Seção {0} não encontrada no arquivo {1}'.format(section, filename))
 
     return db
 
-def connect():
-    """ Connect to the PostgreSQL database server """
-    conn = None
+
+def conectar():
+    """ Conectar ao servidor de banco de dados PostgreSQL """
     try:
-        # read connection parameters
         params = config()
+        # conectar ao servidor de banco de dados PostgreSQL
+        print('Conectando ao banco de dados PostgreSQL...')
+        with psycopg2.connect(**params) as conn:
+            with conn.cursor() as cur:
+                print('Versão do banco de dados PostgreSQL:')
+                cur.execute('SELECT version()')
 
-        # connect to the PostgreSQL server
-        print('Connecting to the PostgreSQL database...')
-        conn = psycopg2.connect(**params)
-		
-        # create a cursor
-        cur = conn.cursor()
-        
-	# execute a statement
-        print('PostgreSQL database version:')
-        cur.execute('SELECT version()')
-
-        # display the PostgreSQL database server version
-        db_version = cur.fetchone()
-        print(db_version)
-       
-	# close the communication with the PostgreSQL
-        cur.close()
+                # exibe a versão do servidor do bd PostgreSQL
+                versao_bd = cur.fetchone()
+                print(versao_bd)
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
-    finally:
-        if conn is not None:
-            conn.close()
-            print('Database connection closed.')
-            
+    else:
+        print('Conexão com o banco de dados fechada automaticamente.')

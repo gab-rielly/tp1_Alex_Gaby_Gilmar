@@ -9,7 +9,7 @@ class BancoDeDados:
     def conectar(self):
         try:
             # Conectar ao servidor PostgreSQL sem especificar o nome do banco de dados
-            self.conn = psycopg2.connect(dbname='postgres', user='postgres', password='root', host='localhost')
+            self.conn = psycopg2.connect(dbname='postgres', user='postgres', password='VIDEOGAME03', host='localhost')
             self.conn.autocommit = True
         except (Exception, psycopg2.DatabaseError) as erro:
             print(erro)
@@ -43,12 +43,11 @@ class BancoDeDados:
                             id_produto INT PRIMARY KEY NOT NULL,
                             asin CHAR(10) NOT NULL,
                             titulo VARCHAR(256) NOT NULL,
-                            grupo_produto VARCHAR(26) NOT NULL,
+                            grupo_produto VARCHAR(126) NOT NULL,
                             rank_vendas INT NOT NULL,
                             UNIQUE(asin)
                         )
-                    """).format(sql.Identifier('tabela_produto'))
-                                   
+                    """).format(sql.Identifier('tabela_produto'))         
 
                     cria_tabela_similar = sql.SQL("""
                         CREATE TABLE IF NOT EXISTS {} (
@@ -63,29 +62,23 @@ class BancoDeDados:
                         CREATE TABLE IF NOT EXISTS {} (
                             asin_produto CHAR(10)  NOT NULL,
                             nome_categoria VARCHAR(256) NOT NULL,
+                            id_categoria INT NOT NULL,
+                            PRIMARY KEY(asin_produto, nome_categoria, id_categoria),
                             FOREIGN KEY(asin_produto) REFERENCES tabela_produto(asin)
                         )
                     """).format(sql.Identifier('tabela_categoria'))
 
-                    cria_tabela_subcategoria = sql.SQL("""
-                        CREATE TABLE IF NOT EXISTS {} (
-                            asin_produto CHAR(10) NOT NULL ,
-                            nome_subcategoria VARCHAR(256) NOT NULL,
-                            id_subcategoria INT NOT NULL,
-                            PRIMARY KEY(asin_produto, id_subcategoria),
-                            FOREIGN KEY(asin_produto) REFERENCES tabela_produto(asin)
-                        )
-                    """).format(sql.Identifier('tabela_subcategoria'))
-
                     cria_tabela_review = sql.SQL("""
                         CREATE TABLE IF NOT EXISTS {} (
-                            id_produto SERIAL NOT NULL,
+                            id_review SERIAL NOT NULL,
+                            id_produto INT NOT NULL,
                             asin_produto CHAR(10) NOT NULL,
                             cliente VARCHAR(14) NOT NULL,
                             data DATE NOT NULL,
                             avaliacao INT NOT NULL,
                             util INT,
-                            PRIMARY KEY(id_produto, asin_produto),
+                            PRIMARY KEY(id_review, id_produto, asin_produto),
+                            FOREIGN KEY(id_produto) REFERENCES tabela_produto(id_produto),
                             FOREIGN KEY(asin_produto) REFERENCES tabela_produto(asin)
                         )
                     """).format(sql.Identifier('tabela_review'))
@@ -94,7 +87,6 @@ class BancoDeDados:
                     cur.execute(cria_tabela_similar)
                     cur.execute(cria_tabela_categoria)
                     cur.execute(cria_tabela_review)
-                    cur.execute(cria_tabela_subcategoria)
 
                     conn.commit()
 
