@@ -42,8 +42,8 @@ class BancoDeDados:
                         CREATE TABLE IF NOT EXISTS {} (
                             id_produto INT PRIMARY KEY NOT NULL,
                             asin CHAR(10) NOT NULL,
-                            titulo VARCHAR(256) NOT NULL,
-                            grupo_produto VARCHAR(126) NOT NULL,
+                            titulo VARCHAR(1006) NOT NULL,
+                            grupo_produto VARCHAR(1006) NOT NULL,
                             rank_vendas INT NOT NULL,
                             UNIQUE(asin)
                         )
@@ -61,7 +61,7 @@ class BancoDeDados:
                     cria_tabela_categoria = sql.SQL("""
                         CREATE TABLE IF NOT EXISTS {} (
                             asin_produto CHAR(10)  NOT NULL,
-                            nome_categoria VARCHAR(256) NOT NULL,
+                            nome_categoria VARCHAR(1006) NOT NULL,
                             id_categoria INT NOT NULL,
                             PRIMARY KEY(asin_produto, nome_categoria, id_categoria),
                             FOREIGN KEY(asin_produto) REFERENCES tabela_produto(asin)
