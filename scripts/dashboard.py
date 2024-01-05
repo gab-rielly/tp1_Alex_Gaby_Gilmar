@@ -4,7 +4,7 @@ from config import config
 
 class Dashboard:
 
-    def __init__(self):
+    def _init_(self):
         self.params = config()
 
     def line(self):
@@ -42,11 +42,12 @@ class Dashboard:
 
                 # Executar a consulta para maior avaliação
                 cur.execute(consulta_maior_avaliacao, (asin,))
-                rows_maior_avaliacao = cur.fetchall()
-
+                maior_avaliacao = cur.fetchall()
+                print("QUERY A)")
+                print("-"*10)
                 print("-> Top 5 comentários mais úteis e com maior avaliação:")
                 print("(id_produto, cliente, data, avaliacao, util)\n")
-                for row in rows_maior_avaliacao:
+                for row in maior_avaliacao:
                     print(row)
                 self.line()
 
@@ -66,12 +67,12 @@ class Dashboard:
 
                 # Executar a consulta para menor avaliação
                 cur.execute(consulta_menor_avaliacao, (asin,))
-                rows_menor_avaliacao = cur.fetchall()
+                menor_avaliacao = cur.fetchall()
 
                 print("-> Top 5 comentários mais úteis e com menor avaliação:")
                 print("(id_produto, cliente, data, avaliacao, util)\n")
                 
-                for row in rows_menor_avaliacao:
+                for row in menor_avaliacao:
                     print(row)
 
                 self.line()
@@ -84,7 +85,10 @@ class Dashboard:
             params = config()
             with psycopg2.connect(**params) as conn, conn.cursor() as cur:
                 consulta = sql.SQL("""
-                    SELECT tabela_similar.asin_similar, tabela_produto.titulo, tabela_produto.rank_vendas
+                    SELECT 
+                        tabela_similar.asin_similar,
+                        tabela_produto.titulo,
+                        tabela_produto.rank_vendas
                     FROM tabela_similar
                     JOIN tabela_produto ON tabela_similar.asin_similar = tabela_produto.asin
                     WHERE tabela_similar.asin_produto = %s AND tabela_produto.rank_vendas < (
@@ -93,7 +97,7 @@ class Dashboard:
                         WHERE asin = %s
                     )
                     ORDER BY tabela_produto.rank_vendas ASC
-                    LIMIT 5
+                    LIMIT 10
                 """)
 
                 cur.execute(consulta, (asin, asin))
@@ -102,7 +106,7 @@ class Dashboard:
                 cont = 1
 
                 if len(rows) > 1:
-                    print(f"-> Estes são os produtos similares com vendas maiores que o asin= {asin}:\n")
+                    print(f"QUERY B)-> Estes são os produtos similares com vendas maiores que o asin= {asin}:\n")
                 else:
                     print(f"-> O produto com asin= {asin} não possui produtos similares com vendas maiores que ele.")
 
@@ -117,23 +121,22 @@ class Dashboard:
         except Exception as error:
             print(f"Erro ao executar a consulta SQL em lista_maior_similar: {error}")
 #dashboard c
-    def mostra_evolucao_diaria(self, asin, n):
+    def mostra_evolucao_diaria(self, asin):
         try:
             params = config()
 
             with psycopg2.connect(**params) as conn, conn.cursor() as cur:
                 cur.execute("""
-                    SELECT date_trunc('day', data) AS data_review, AVG(avaliacao) AS media_avaliacao
+                    SELECT date_trunc('day', data), AVG(avaliacao) 
                     FROM tabela_review
                     WHERE asin_produto = %s
-                    GROUP BY data_review
-                    ORDER BY data_review
-                    LIMIT %s
-                """, (asin, n))
+                    GROUP BY date_trunc('day', data)
+                    ORDER BY date_trunc('day', data)
+                """, (asin,))
                 rows = cur.fetchall()
                 self.line()
 
-                print(f"-> Evolução diária das avaliações médias do produto com asin= {asin} ao longo de {n} dias:\n")
+                print(f"QUERY C)-> Evolução diária das avaliações médias do produto com asin= {asin}:\n")
                 for dia in rows:
                     data = dia[0]
                     data_formatada = data.strftime('%Y-%m-%d')
@@ -152,13 +155,15 @@ class Dashboard:
                 cur.execute("SELECT DISTINCT grupo_produto FROM tabela_produto") #Isso retornara todos os valores unicos encontrados na coluna especificada da tabela.
                 gp_produtos_distintos = cur.fetchall()
 
-                print("-> Top 10 produtos mais vendidos em cada grupo de produtos:\n")
+                print("QUERY D)-> Top 10 produtos mais vendidos em cada grupo de produtos:\n")
                 for grupo in gp_produtos_distintos:
                     print("-"*10)
                     print(f'Grupo: {grupo[0]}')
                     print("-"*10)
                     cur.execute("""
-                        SELECT tabela_produto.titulo, tabela_produto.rank_vendas
+                        SELECT 
+                            tabela_produto.titulo, 
+                            tabela_produto.rank_vendas
                         FROM tabela_produto
                         WHERE tabela_produto.grupo_produto = %s AND tabela_produto.rank_vendas >= 1
                         ORDER BY tabela_produto.rank_vendas
@@ -179,7 +184,10 @@ class Dashboard:
 
             with psycopg2.connect(**params) as conn, conn.cursor() as cur:
                 cur.execute("""
-                    SELECT tabela_produto.asin, tabela_produto.titulo, AVG(tabela_review.util)
+                    SELECT
+                        tabela_produto.asin,
+                        tabela_produto.titulo, 
+                        AVG(tabela_review.util)
                     FROM tabela_produto
                     JOIN tabela_review ON tabela_produto.asin = tabela_review.asin_produto
                     GROUP BY tabela_produto.asin, tabela_produto.titulo
@@ -187,7 +195,7 @@ class Dashboard:
                     LIMIT 10;
                 """)
                 self.line()
-                print("-> Top 10 produtos com a maior média de avaliações úteis positivas:\n")
+                print("QUERY E)-> Top 10 produtos com a maior média de avaliações úteis positivas:\n")
                 rows = cur.fetchall()
                 
                 cont = 1
@@ -208,10 +216,14 @@ class Dashboard:
             params = config()
             with psycopg2.connect(**params) as conn, conn.cursor() as cur:
                 cur.execute("""
-                    SELECT tabela_categoria.nome_categoria, AVG(tabela_review.util)
+                    SELECT
+                        tabela_categoria.nome_categoria,
+                        AVG(tabela_review.util)
                     FROM tabela_categoria
-                    JOIN tabela_produto ON tabela_categoria.asin_produto = tabela_produto.asin
-                    JOIN tabela_review ON tabela_review.asin_produto = tabela_produto.asin
+                    JOIN 
+                        tabela_produto ON tabela_categoria.asin_produto = tabela_produto.asin
+                    JOIN
+                        tabela_review ON tabela_review.asin_produto = tabela_produto.asin
                     WHERE tabela_review.util > 0
                     GROUP BY tabela_categoria.nome_categoria
                     ORDER BY AVG(tabela_review.util) DESC
@@ -219,8 +231,8 @@ class Dashboard:
                 """)
                 rows = cur.fetchall()
                 self.line()
-                print("-> Top 5 categorias de produtos com a maior média de avaliações úteis positivas por produto:")
-                
+                print("QUERY F)-> Top 5 categorias de produtos com a maior média de avaliações úteis positivas por produto:")
+                print()
                 cont = 1
                 for row in rows:
                     print(f'Top {cont}')
@@ -231,4 +243,41 @@ class Dashboard:
 
         except Exception as e:
             print(f"Um erro ocorreu em lista_categoria_media_avaliacao: {e}")
+
 #dashboard g
+    def lista_comentarios_clientes(self):
+        try:
+            params = config()
+            with psycopg2.connect(**params) as conn, conn.cursor() as cur:
+                cur.execute("SELECT DISTINCT grupo_produto FROM tabela_produto")
+                gp_produtos_distintos = cur.fetchall()
+                print("-"*50)
+                print("QUERY G)-> Top 10 clientes que fizeram mais comentários por grupo de produtos:")
+                print()
+                
+                for grupo in gp_produtos_distintos:
+                    print(f'Grupo: {grupo[0]}\n')
+                    cont = 1
+                    cur.execute("""
+                        SELECT cliente, COUNT(*) AS total_comentarios 
+                        FROM tabela_review
+                        INNER JOIN tabela_produto ON tabela_review.asin_produto = tabela_produto.asin
+                        WHERE grupo_produto = %s
+                        GROUP BY cliente
+                        ORDER BY total_comentarios DESC
+                        LIMIT 10
+                    """, (grupo[0],))
+                    
+                    rows = cur.fetchall()
+
+                    for clientes in rows:
+                        print("-"*10)
+                        print(f'Top {cont}:')
+                        print(f'Cliente: {clientes[0]}')
+                        print(f'Total_comentários: {clientes[1]}')
+                        print("-"*10)
+                        cont += 1
+                    #print()
+                    
+        except psycopg2.Error as e:
+            print(f"Error: {e}")
