@@ -6,7 +6,8 @@ Os detalhes sobre o trablho prático estão disponíveis [aqui](https://docs.goo
 
 Nota
 ---------------------
-Obtemos 8.5
+Obtivemos 8.5
+
 E essas foram as considerações do professor acerca do nosso trabalho:
 - Há uma FK redundante em tabela_review
 - A modelagem não dá suporte a sub-categorias
