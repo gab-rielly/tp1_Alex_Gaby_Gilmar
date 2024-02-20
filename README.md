@@ -1,75 +1,27 @@
 # Repositorio Base
 # Trabalho Prático 1 de Bancos de Dados I 
+Objetivo deste trabalho prático foi projetar e implementar um banco de dados sobre produtos vendidos em uma loja de comércio eletrônico, incluindo avaliações e comentários de usuários sobre estes produtos. O trabalho consistiu na criação de um Banco de Dados Relacional contendo dados sobre compras de produtos e elaboração de um Dashboard, um painel para monitoramento dos dados de compra, gerando uma série de relatórios. Os dados para o banco de dados foram fornecidos pelo arquivo amazon-meta.txt presentes no link: https://snap.stanford.edu/data/amazon-meta.html.
 
 Os detalhes sobre o trablho prático estão disponíveis [aqui](https://docs.google.com/document/d/1CXf_y392fJ_KNTZbdr5TWSRgEuYXFPyGTJOh4DcqOdA/edit): 
 
-## Copiando esse repositorio
+Nota
+---------------------
+Obtemos 8.5
+E essas foram as considerações do professor acerca do nosso trabalho:
+- Há uma FK redundante em tabela_review
+- A modelagem não dá suporte a sub-categorias
+- Deveria haver uma FK em asin_similar
+- O script python para extração dos dados do arquivo de entrada, criação do esquema do banco de dados, e povoamento das relações com estes dados deveria ser entregue em um único 
+  arquivo chamado tp1_3.2.py
+- O script python para execução das consultas do Dashboard descritas na Seção 7. O script deveria ser entregue em um único arquivo chamado tp1_3.3.py
 
-Você deve ter uma conta no github. A criação de contas é gratis e o GitHub é importante para sua visa profissional e carreira
+Modo de Usar
+---------------------
+As informações sobre estão na sessão 3 da documentação /documentacao/tp1_3.1.pdf
 
-Para fazer isso siga esses passos:
-
-https://user-images.githubusercontent.com/118348/229365938-48d261c8-b569-463c-bc00-462eb218b423.mp4
-
-Para entender melhor [git e github](https://www.alura.com.br/artigos/o-que-e-git-github).
-
-## Configurando
-
-### Docker e Docker Compose
-
-Instalando o [docker desktop e docker compose (Windows, Linux e Mac)](https://www.docker.com/products/docker-desktop/)
-
-Instalando na linha de comando
-
-[Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt) e [Docker Compose Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt)
-
-#### Como funciona o docker compose
-
-[Docker Compose - Explicado](https://blog.4linux.com.br/docker-compose-explicado/)
-
-### Postgres
-
-Criar pasta `postgres-data` na raiz do projeto. Essa pasta **não deve ser enviada** para o github.
-
-Depois você deve subir o docker-compose com o postgres. Da primeira vez vai demorar um pouco, e fique de olho nos logs para qualquer erro.
-
-```bash
-docker-compose up -d
-```
-
-### Python
-
-Criar o ambiente virtual
-
-```bash
-python3 -m venv .tp1
-```
-
-Ativar o ambiente virtual
-
-```bash
-source .tp1/bin/activate
-```
-
-## Usando o postgres na sua maquina
-
-Após subir, você conseguirá conectar no banco. Ele vem vazio e você terá que preencher ele com o que o trabalho pede.
-
-```bash
-psql -h localhost -U postgres
-```
-
-As credenciais são:
-
-```yaml
-username: postgres
-password: postgres
-```
-
-## Usando Python
-
-Para instalar bibliotecas necessarias para o trabalho, use o pip [DEPOIS de ativar o ambiente](#python) virtual.
-
-```bash
-pip install <biblioteca>
-```
+Autores
+---------------------
+Este trabalho foi desenvolvido por:
+- Gilmar Eduardo Costa do Couto Júnior (gilmar.junior@icomp.ufam.edu.br)
+- Gabrielly Ferreira Rodrigues (gabrielly.rodrigues@icomp.ufam.edu.br)
+- Alex Bruno Silveira Viana (alex.viana@icomp.ufam.edu.br)
